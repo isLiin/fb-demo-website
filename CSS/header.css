@@ -1,0 +1,165 @@
+
+/* CSS HEADER */
+/*
+*   Creator : Ho Ngoc Khanh
+*   Date    : 04/12/2021
+*/
+
+.container-header{
+    top: 0;
+    left: 0;
+    z-index: 9;
+    height: 55px;
+    position: fixed;
+    background-color: var(--color-2);
+}
+
+.content-header-logo{
+    font-size: 100px; 
+    color: var(--color-4);
+    overflow: hidden;
+    align-items: center;
+}
+.content-header-logo .form-control{
+    width: 60%;
+    height: 60%;
+    margin-left: 23px;
+    border: none;
+    color: var(--color-4);
+    background-color: var(--color-3);
+}
+.header-infor{
+    justify-content: flex-end !important;
+}
+
+.container-header > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.container-header > div > li{
+    list-style-type: none;
+    height: 100%;
+    /* margin: 0 30px; */
+}
+
+.container-header > div > li:focus-within,
+.container-header > div > li:hover{
+    background-color: var(--color-3);
+    box-shadow: 0 0 3px var(--color-1);
+}
+
+.container-header > div > li:focus-within{
+    background-color: var(--color-3);
+    box-shadow: 0 0 3px var(--color-1);
+}
+.container-header > div > li:hover > a{
+    color: var(--color-4);
+    border: none;
+    outline: none;
+}
+.container-header > div > li:focus-within >a{
+    color: var(--color-4);
+    border: none;
+    outline: none;
+}
+.container-header > div > li > a{
+    height: 100%;
+    width: 100%;
+    padding: 15px 55px 10px 55px;
+    border-radius: 5px;
+    color: var(--color-3);
+    text-align: center;
+    /* display: flex;
+    align-items: center; */
+}
+.container-header > div > li > a > svg{
+    margin-top: 6px;
+    font-size: 30px;
+    height: 80%;
+    width: 100%;
+}
+
+.content-header > .infor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-4);
+    position: relative;
+    margin: 0 15px;
+    /* overflow: hidden; */
+} 
+.content-header > div.infor > a{
+    max-width: 200px;
+    width: auto;
+    height: 70%;
+    padding: 5px 10px 5px 5px;
+    border-radius: 64px;
+    color: var(--color-4);
+}
+
+.content-header > .infor > a > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 3px var(--color-4);
+}
+
+.content-header > div.infor > a{    
+    background-color: var(--color-3);
+    box-shadow: 0 0 3px var(--color-1);
+}
+.content-header > div.infor > a:focus-within,
+.content-header > div.infor > a:hover{
+    text-decoration: none;  
+    background-color: var(--color-1);
+    box-shadow: 0 0 3px var(--color-1);
+}
+.content-header > div.infor:focus-within > .list-infor-item
+/* ,.content-header > div.infor:hover > .list-infor-item */
+{
+    display: block;
+}
+
+.content-header > .infor > .list-infor-item{
+    z-index: 9;
+    top: 55px;
+    right: 1px;
+    width: 250px;
+    height: auto;
+    overflow: auto;
+    display: none;
+    max-height: 500px;
+    position: absolute;
+    box-shadow: 0 0 3px var(--color-1);
+    background-color: var(--color-3);
+}
+
+.list-infor-item > .infor-item{
+    width: 100%;
+    height: 50px;
+    text-transform: capitalize;
+}
+
+.list-infor-item > .infor-item:focus-within,
+.list-infor-item > .infor-item:hover{
+    /* cursor: pointer; */
+    background-color: var(--color-2);
+}
+
+.list-infor-item > .infor-item > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    color: var(--color-4);
+    text-decoration: none;
+    /* justify-content: space-between; */
+}
+.list-infor-item > .infor-item > a > svg{
+    font-size: 20px;
+    margin-right: 15px;
+}

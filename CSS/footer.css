@@ -1,0 +1,14 @@
+
+/* CSS HEADER */
+/*
+*   Creator : Ho Ngoc Khanh
+*   Date    : 04/12/2021
+*/
+
+.container-footer{
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(34, 34, 34, 0.39);
+    background-color: var(--color-3);
+}

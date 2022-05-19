@@ -1,0 +1,33 @@
+
+/* CSS BUTTON MESSAGE */
+/*
+*   Creator : Ho Ngoc Khanh
+*   Date    : 04/12/2021
+*/
+
+.btn-message{
+    z-index: 2;
+    right: 40px;
+    width: 45px;
+    bottom: 40px;
+    height: 45px;
+    display: flex;
+    position: fixed;
+    transition: 1.5s;
+    overflow: hidden;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-4);
+}
+
+.btn-message:focus-within,
+.btn-message:hover {
+    transition: 1s;
+    cursor: pointer;
+    transform: rotate(200deg);
+    box-shadow: 0 0 3px var(--color-2);
+}
+.btn-message svg{
+    font-size: 22px;
+}
