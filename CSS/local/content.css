@@ -1,4 +1,3 @@
-
 /* CSS HEADER */
 /*
 *   Creator : Ho Ngoc Khanh
@@ -6,15 +5,15 @@
 */
 
 
-.container-content{
+.container-content {
     /* max-height: 200vh;
     height: 100%; */
-    margin-top: 55px !important; 
+    margin-top: 55px !important;
     height: auto;
     background-color: var(--color-3);
 }
 
-.content-left > fieldset > .content-item{
+.content-left>fieldset>.content-item {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -22,40 +21,42 @@
     border-radius: 10px;
     margin: 5px 0 !important;
 }
-.content-left > fieldset > .content-item:first-child{
+
+.content-left>fieldset>.content-item:first-child {
     margin-top: 15px !important;
     text-transform: uppercase;
 }
-.content-left > fieldset > .content-item:first-child > a,
-.content-left > fieldset > .content-item > a{
+
+.content-left>fieldset>.content-item:first-child>a,
+.content-left>fieldset>.content-item>a {
     width: 100%;
     height: 100%;
     padding: 5px;
     color: var(--color-4);
 }
 
-.content-left > fieldset > .content-item > a{
+.content-left>fieldset>.content-item>a {
     padding: 13px;
 }
 
-.content-left > fieldset > .content-item > a:hover{
+.content-left>fieldset>.content-item>a:hover {
     background-color: var(--color-2);
     box-shadow: 0 0 3px var(--color-1);
     text-decoration: none;
 }
 
-.content-left > fieldset > .content-item > a:hover > img{
-    border-color: tomato;   
+.content-left>fieldset>.content-item>a:hover>img {
+    border-color: tomato;
 }
 
-.content-left > fieldset > .content-item > a:focus-within > svg,
-.content-left > fieldset > .content-item > a:focus-within > span,
-.content-left > fieldset > .content-item > a:hover > svg,
-.content-left > fieldset > .content-item > a:hover > span{
+.content-left>fieldset>.content-item>a:focus-within>svg,
+.content-left>fieldset>.content-item>a:focus-within>span,
+.content-left>fieldset>.content-item>a:hover>svg,
+.content-left>fieldset>.content-item>a:hover>span {
     color: var(--color-4);
 }
 
-.content-left > fieldset > .content-item > a > img{
+.content-left>fieldset>.content-item>a>img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -63,19 +64,19 @@
     box-shadow: 0 0 4px var(--color-4);
 }
 
-.content-left > fieldset > .content-item > a.content-user-history:hover > svg{
+.content-left>fieldset>.content-item>a.content-user-history:hover>svg {
     transform: rotate(-200deg);
     transition: 0.2s;
 }
 
-.content-left > fieldset > .content-item > a > svg{
+.content-left>fieldset>.content-item>a>svg {
     font-size: 25px;
     transition: 0.2s;
     width: 30px;
     height: 100%;
 }
 
-.content-left > fieldset > .content-item > a > span{
+.content-left>fieldset>.content-item>a>span {
     margin-left: 15px;
 }
 
@@ -84,16 +85,17 @@
     ===========================================
     =========================================== */
 
-.content-center{
+.content-center {
     display: flex;
     flex-wrap: wrap;
+    min-height: 89.5vh;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
     background-color: var(--color-4);
 }
 
-.content-center .item-content{
+.content-center .item-content {
     width: 100%;
     height: auto;
     margin: 5px 0;
@@ -102,12 +104,12 @@
     background-color: var(--color-2);
 }
 
-.content-center .add-content{
+.content-center .add-content {
     height: 120px !important;
 }
 
 
-.content-center .item-content .item-content-header{
+.content-center .item-content .item-content-header {
     width: 100%;
     max-height: 1000px;
     overflow: hidden;
@@ -116,38 +118,39 @@
     align-items: center;
     /* justify-content: ; */
 }
-.content-center .item-content .item-content-header .icon-user{
+
+.content-center .item-content .item-content-header .icon-user {
     width: 55px;
     height: 55px;
     position: relative;
 }
 
-.content-center .item-content .item-content-header .content-reading{
+.content-center .item-content .item-content-header .content-reading {
     color: var(--color-4);
     max-height: 1000px;
     height: auto;
     overflow: hidden;
 }
 
-.content-center .item-content .item-content-header .name-user a{
+.content-center .item-content .item-content-header .name-user a {
     color: var(--color-4);
     font-weight: 600;
     font-size: 19px;
 }
 
-.content-center .item-content .item-content-header .content-reading img{
+.content-center .item-content .item-content-header .content-reading img {
     margin-top: 5px;
     width: 100%;
 }
 
-.content-center .item-content .item-content-header .content-reading .reading .content-img{
+.content-center .item-content .item-content-header .content-reading .reading .content-img {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .content-center .item-content .item-content-header .icon-user a,
-.content-center .item-content .item-content-header .icon-user a  img{
+.content-center .item-content .item-content-header .icon-user a img {
     top: 0;
     left: 5px;
     width: 80%;
@@ -159,12 +162,15 @@
 /*  ===========================================
     ===========================================
     =========================================== */
+.hide-display {
+    display: none !important;
+}
 
-.content-right > fieldset > h5{
+.content-right>fieldset>h5 {
     color: var(--color-2);
 }
 
-.content-right > fieldset > .sponsor{
+.content-right>fieldset>.sponsor {
     width: 100%;
     height: 125px;
     margin: 5px 0;
@@ -173,16 +179,50 @@
     overflow: auto;
 }
 
-.content-right > fieldset > .sponsor:focus-within,
-.content-right > fieldset > .sponsor:hover{
+.content-right>fieldset>.sponsor:focus-within,
+.content-right>fieldset>.sponsor:hover {
     background-color: var(--color-2);
     box-shadow: 0 0 3px var(--color-1);
 }
 
-.content-right > fieldset > .sponsor > .sponsor-img,
-.content-right > fieldset > .sponsor > .sponsor-content,
-.content-right > fieldset > .sponsor > .sponsor-img >img {
+.content-right>fieldset>.sponsor>.sponsor-img,
+.content-right>fieldset>.sponsor>.sponsor-content,
+.content-right>fieldset>.sponsor>.sponsor-img>img {
     width: 100%;
     height: 100%;
     color: var(--color-4);
+}
+
+.formCreatePost-close {
+    background-color: var(--color-2) !important;
+}
+
+.formCreatePost-close:hover {
+    box-shadow: 0px 0px 10px 5px var(--color-3) inset;
+    transition: 0.2s;
+}
+
+.show-err-post {
+    opacity: 0;
+    color: red;
+    cursor: default;
+    margin-right: 15vh;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 9;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.dropdown-toggle:focus .dropdown-menu{
+    display: block;
 }

@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./IMG/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/all.css">
-    <link rel="stylesheet" href="./CSS/bootstrap.css">
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/content.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="./CSS/btn-message.css">
-    <link rel="stylesheet" href="./CSS/form.css">
-    <title> !!! AVIGATO | HNK</title>
+    <link rel="stylesheet" href="./CSS/reference/all.css">
+    <link rel="stylesheet" href="./CSS/reference/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/reference/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/local/header.css">
+    <link rel="stylesheet" href="./CSS/local/content.css">
+    <link rel="stylesheet" href="./CSS/local/footer.css">
+    <link rel="stylesheet" href="./CSS/local/btn-message.css">
+    <link rel="stylesheet" href="./CSS/local/form-create-post.css">
+    <title> !!! AVIGATO</title>
     <style>
         :root {
             --color-1: #191a1bf5;
@@ -109,9 +109,48 @@
             </div>
         </div>
     </div>
-
     <!-- CONTENT -->
     <div class="container-content container-fluid row p-0 m-0 m-auto">
+        <div id="formCreatePost" hidden>
+            <div class="bgr-hide" onClick="iCloseClick()"></div>
+            <form method="post" style="max-width: 45vw;">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3>Create Post</h3>
+                    </div>
+                    <div class="card-body">
+                        <textarea id="area-comment-post" cols="100" rows="4" style="max-width: 100%;"
+                            placeholder="What do you think?"></textarea>
+                    </div>
+                    <div class="card-footer text-muted footer-create-post">
+                        <!-- Example single danger button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-grin-squint"></i>
+                                Action
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Funny</a>
+                                    <a class="dropdown-item" href="#">Sad</a>
+                                    <a class="dropdown-item" href="#">Nothing</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">-</a>
+                                </div>
+                            </button>
+                            
+                        </div>
+
+                        <span class="show-err-post text-center"></span>
+                        <div class="text-right">
+                            <button onClick="iUploadClick()" type="button"
+                                class="btn btn-primary formCreatePost-upload">Upload</button>
+                            <button onClick="iCloseClick()" type="button"
+                                class="btn btn-dark formCreatePost-close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
         <!-- LEFT -->
         <div class="content-left col-3">
             <fieldset>
@@ -153,95 +192,15 @@
                     <div class="col-11 row">
                         <div class="col-12 name-user mb-2"><a href="">User name</a></div>
                         <div class="col-12">
-                            <button class="btn btn-info"><i class="fas fa-quote-right"></i> New post</button>
-                            <button class="btn btn-success"><i class="fas fa-photo-video"></i> Images/Video</button>
-                            <button class="btn btn-warning"> <i class="fas fa-grin-squint"></i> Action</button>
+                            <button class="btn btn-info actionNewPost"><i class="fas fa-quote-right"></i> New
+                                post</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- item-content -->
-            <div class="item-content row">
-                <div class="col-12 row item-content-header">
-                    <div class="col-1 icon-user p-0 m-0">
-                        <a href=""><img src="./IMG/user.jpg" alt=""></a>
-                    </div>
-                    <div class="col-11 row content-reading">
-                        <div class="col-12 name-user mb-2"><a href="">User name</a></div>
-                        <div class="col-12">
-                            <div class="reading">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi vel aperiam
-                                omnis. Consectetur blanditiis quasi quo repellendus quos perspiciatis, nesciunt dolor
-                                aut fugit magni placeat distinctio sint sequi laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi vel aperiam
-                                omnis.
-                                <div class="content-img">
-                                    <img src="./IMG/sponsor.png" alt="">
-                                </div>
-                            </div>
-                            <div class="action-content mt-3">
-                                <div class="btn btn-danger action-content-like"> <i class="far fa-heart"></i> <span>1.406</span></div>
-                        <div class="btn btn-secondary action-content-cmt"><i class="fas fa-feather-alt"></i> Comment</div>
-                        <div class="btn btn-info action-content-share"><i class="far fa-paper-plane"></i> Share</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="item-content row">
-                <div class="col-12 row item-content-header">
-                    <div class="col-1 icon-user p-0 m-0">
-                        <a href=""><img src="./IMG/user.jpg" alt=""></a>
-                    </div>
-                    <div class="col-11 row content-reading">
-                        <div class="col-12 name-user mb-2"><a href="">User name</a></div>
-                        <div class="col-12">
-                            <div class="reading">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi vel aperiam
-                                omnis. Consectetur blanditiis quasi quo repellendus quos perspiciatis, nesciunt dolor
-                                aut fugit magni placeat distinctio sint sequi laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi vel aperiam
-                                omnis.
-                                <div class="content-img">
-                                    <!-- <img src="./IMG/sponsor.png" alt=""> -->
-                                </div>
-                            </div>
-                            <div class="action-content mt-3">
-                                <div class="btn btn-danger action-content-like"> <i class="far fa-heart"></i> <span>1.406</span></div>
-                        <div class="btn btn-secondary action-content-cmt"><i class="fas fa-feather-alt"></i> Comment</div>
-                        <div class="btn btn-info action-content-share"><i class="far fa-paper-plane"></i> Share</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item-content row">
-                <div class="col-12 row item-content-header">
-                    <div class="col-1 icon-user p-0 m-0">
-                        <a href=""><img src="./IMG/sponsor.png" alt=""></a>
-                    </div>
-                    <div class="col-11 row content-reading">
-                        <div class="col-12 name-user mb-2"><a href="">User name</a></div>
-                        <div class="col-12">
-                            <div class="reading">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi vel aperiam
-                                omnis. Consectetur blanditiis quasi quo repellendus quos perspiciatis, nesciunt dolor
-                                aut fugit magni placeat distinctio sint sequi laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi vel aperiam
-                                omnis.
-                                <div class="content-img">
-                                    <img src="./IMG/nft.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="action-content mt-3">
-                                <div class="btn btn-danger action-content-like"> <i class="far fa-heart"></i> <span>1.406</span></div>
-                        <div class="btn btn-secondary action-content-cmt"><i class="fas fa-feather-alt"></i> Comment</div>
-                        <div class="btn btn-info action-content-share"><i class="far fa-paper-plane"></i> Share</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <div class="container-data-content"></div>
 
         </div>
         <!-- RIGHT -->
@@ -274,25 +233,21 @@
         </div>
     </div>
 
-    <div class="container-form">
-
-    </div>
-
     <!-- FOOTER -->
-    <div class="container-footer container-fluid p-0 m-0 mt-5">
-        <p>Creator : Ho Ngoc Khanh</p>
-    </div>
+    <div class="container-footer container-fluid p-0 m-0"></div>
 
 
     <!-- BUTTON MESSAGE -->
     <div class="btn-message"><i class="fas fa-plus"></i></div>
 
     <!-- -============= Import Script =============- -->
-    <script src="./JS/all.js"></script>
-    <script src="./JS/bootstrap.js"></script>
-    <script src="./JS/bootstrap.min.js"></script>
-    <script src="./JS/jquery-3.6.0.js"></script>
-    <script src="./JS/icontent.js"></script>
+    <script src="./JS/reference/all.js"></script>
+    <script src="./JS/reference/jquery-3.6.0.js"></script>
+    <script src="./JS/reference/bootstrap.min.js"></script>
+    <script src="./JS/reference/bootstrap.js"></script>
+    <script src="./JS/local/ItemConstant.js"></script>
+    <script src="./JS/local/FirstRunProject.js"></script>
+    <script src="./JS/local/ActionMain.js"></script>
 </body>
 
 </html>
