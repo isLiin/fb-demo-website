@@ -153,8 +153,8 @@
 .content-center .item-content .item-content-header .icon-user a img {
     top: 0;
     left: 5px;
-    width: 80%;
-    height: 90%;
+    width: 45px;
+    height: 45px;
     position: absolute;
     border-radius: 50%;
 }

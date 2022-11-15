@@ -37,6 +37,7 @@
     height: 100%;
     display: flex;
     justify-content: flex-start;
+    overflow: hidden;
 }
 .container-header > div > li{
     list-style-type: none;
@@ -67,7 +68,7 @@
 .container-header > div > li > a{
     height: 100%;
     width: 100%;
-    padding: 15px 55px 10px 55px;
+    padding: 3vw;
     border-radius: 5px;
     color: var(--color-3);
     text-align: center;
